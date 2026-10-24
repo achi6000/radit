@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment[es]=Automatizador para emisoras de radio.
+Comment=Automatizador para emisoras de radio.
+Exec=xradio-leo
+GenericName[es]=XRadio Leo
+GenericName=XRadio Leo
+Icon=/usr/share/pixmaps/xradio-leo.svg
+Name[es]=XRadio Leo
+Name=XRadio Leo
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+Categories=AudioVideo;Player;Music;Multimedia;Qt;
