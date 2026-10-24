@@ -21,10 +21,10 @@
   </property>
   <property name="windowIcon">
    <iconset resource="radit.qrc">
-    <normaloff>:/general/iconos/player/ico.png</normaloff>:/general/iconos/player/ico.png</iconset>
+    <normaloff> :/general/iconos/xradio-leo.svg</normaloff> :/general/iconos/xradio-leo.svg</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 0, 0);
+   <string notr="true">background-color: rgb(241, 244, 247);
 </string>
   </property>
   <property name="iconSize">
