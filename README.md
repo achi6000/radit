@@ -1,48 +1,30 @@
-R4dit - Software para radiodifusión.
-=============================================
+# XRadio Leo
 
-![Radit-1](https://raw.githubusercontent.com/jfperini/radit/master/screenshots/radit-header.jpg "Radit-1")
+XRadio Leo is a radio-automation application based on the Radit free-software codebase. This repository is a development fork; it is not yet a packaged or verified release.
 
-#### Radit es un proyecto de software libre para la automatización de emisoras de radio.
+## Features inherited from the base project
 
-Entre otras funciones Radit soporta:
+- Crossfade between audio tracks
+- MP2, MP3, WAV, WMA, OGG and FLAC support (depending on the available audio libraries)
+- Random folder playback
+- Automated events and broadcast log
+- One main player and two auxiliary players
+- Time, temperature and humidity announcements
+- Entry/exit jingles and advertising or music blocks
+- Internet radio connections
 
-    Crossfade entre audios.
-    Soporte para formatos (MP2, MP3, WAV, WMA, OGG, FLAC).
-    Reproducción aleatoria de carpetas.
-    Sistema de eventos para automatizar nuestros contenidos.
-    Dos reproductores auxiliares y uno principal.
-    Log de emisión
-    Locuciones de hora, temperatura y humedad.
-    Pisadores de entrada y salida.
-    Conexiones con radios on-line.
-    Secuencias y tandas para armar bloques publicitarios o musicales
-    Y mucho más........
+## Current XRadio Leo work
 
-## Instalar
+- Rebranded main-window title, application icon and toolbar logo
+- Rebranded About dialog and launcher metadata
+- Initial light/dark theme toggle work in progress
 
-    En ArchLinux:
+**Status:** A successful build and playback test have not yet been verified. Do not treat this branch as a finished installer.
 
-    [user@archlinux:~] yaourt -S radit
-    
-Se necesitan algunos permisos. Ejecutar el [script](https://github.com/jfperini/radit/blob/master/radit.sh):
+## Build notes
 
-    [user@archlinux:~] sh ~/Descargas/radit.sh
-    
-    [user@archlinux:~] radit
+The original project used Qt and external audio/tagging libraries. The exact build steps depend on the Qt version and dependencies installed on the target system. The original upstream project is available at [jfperini/radit](https://github.com/jfperini/radit).
 
-## Compilar
+## License
 
-    cd src
-
-    qmake-qt4 radit.pro
-
-    make
-
-El binario generado se encuntra en la carpeta LinuxDesktop.
-
-![Radit-2](https://raw.githubusercontent.com/jfperini/radit/master/screenshots/radit-footer.jpg "Radit-2")
-
-Página oficial: http://www.radit.org/net
-
-
+This fork is based on the upstream Radit project. Retain the applicable open-source license and copyright notices when redistributing the code.
