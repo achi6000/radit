@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/general/iconos/cubo copy.png);</string>
+    <string notr="true">image: url(:/general/iconos/xradio-leo.svg);</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
