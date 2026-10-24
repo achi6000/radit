@@ -170,6 +170,18 @@ MainWindow::MainWindow(QWidget *parent) :
  * Free in memory
  * @brief MainWindow::~MainWindow
  */
+void MainWindow::ToggleTheme()
+{
+    darkTheme = !darkTheme;
+    if (darkTheme) {
+        setStyleSheet("QMainWindow, QDockWidget, QDialog, QWidget { background-color: #202730; color: #e8edf2; } QLineEdit, QTextEdit, QPlainTextEdit, QTreeWidget, QListWidget, QTableWidget, QComboBox, QSpinBox { background-color: #151a20; color: #f3f6f9; selection-background-color: #266ad0; } QPushButton { background-color: #303b48; color: #ffffff; padding: 4px 8px; border: 1px solid #485667; border-radius: 3px; } QToolBar { background-color: #202730; border: 0px; } QStatusBar { background-color: #202730; color: #e8edf2; }");
+        if (themeAction) themeAction->setText(QString::fromUtf8("Tema: Oscuro"));
+    } else {
+        setStyleSheet("QMainWindow, QDockWidget, QDialog, QWidget { background-color: #f1f4f7; color: #202833; } QLineEdit, QTextEdit, QPlainTextEdit, QTreeWidget, QListWidget, QTableWidget, QComboBox, QSpinBox { background-color: #ffffff; color: #202833; selection-background-color: #b9d5ff; } QPushButton { background-color: #e4eaf1; color: #202833; padding: 4px 8px; border: 1px solid #bdc8d5; border-radius: 3px; } QToolBar { background-color: #e8edf3; border: 0px; } QStatusBar { background-color: #e8edf3; color: #202833; }");
+        if (themeAction) themeAction->setText(QString::fromUtf8("Tema: Claro"));
+    }
+}
+
 MainWindow::~MainWindow()
 {
   //  QSettings RaditIni("Radit.ini", QSettings::IniFormat);
