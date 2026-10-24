@@ -10,15 +10,15 @@ IDI_ICON1 ICON  DISCARDABLE "radit.ico"
      BEGIN
          BLOCK "040904b0"
          BEGIN
-             VALUE "CompanyName", "Radit"
-             VALUE "FileDescription", "Automatización de radio Radit "
+             VALUE "CompanyName", "XRadio Leo"
+             VALUE "FileDescription", "AutomatizaciÃ³n de radio XRadio Leo"
              VALUE "FileVersion", "0,1,0,0\0"
              VALUE "InternalName", "\0"
              VALUE "LegalCopyright", "Victor Algaba"
-             VALUE "ProductName", "\0"
+             VALUE "ProductName", "XRadio Leo\0"
              VALUE "ProductVersion", "0,1,0,0\0"
              VALUE "SpecialBuild", "\0"
-             VALUE "Comments", "Versiones beta"
+             VALUE "Comments", "XRadio Leo"
          END
      END
      BLOCK "VarFileInfo"
