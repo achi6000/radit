@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="radit.qrc">
-    <normaloff> :/general/iconos/xradio-leo.svg</normaloff> :/general/iconos/xradio-leo.svg</iconset>
+    <normaloff>:/general/iconos/xradio-leo.svg</normaloff>:/general/iconos/xradio-leo.svg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(241, 244, 247);
