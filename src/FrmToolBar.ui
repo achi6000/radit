@@ -323,7 +323,7 @@ background-color: rgb(10, 67, 129);</string>
       <number>0</number>
      </property>
      <property name="pixmap">
-      <pixmap resource="radit.qrc">:/general/iconos/menu/logo.png</pixmap>
+      <pixmap resource="radit.qrc">:/general/iconos/xradio-leo.svg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>false</bool>
