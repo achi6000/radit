@@ -94,9 +94,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     ui->toolBar->addWidget(w_ToolBar);
-    themeAction = ui->toolBar->addAction(QString::fromUtf8("Cambiar tema"));
-    connect(themeAction, SIGNAL(triggered()), this, SLOT(ToggleTheme()));
-    themeAction = ui->toolBar->addAction(QString::fromUtf8("Tema: Oscuro"));
+    themeAction = ui->toolBar->addAction(QString::fromUtf8("Tema: Claro"));
     connect(themeAction, SIGNAL(triggered()), this, SLOT(ToggleTheme()));
     ui->toolBarCunas->addWidget(w_Cunas);
 
