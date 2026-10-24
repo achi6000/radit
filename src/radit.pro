@@ -1,12 +1,12 @@
 #-------------------------------------------------
 #
-# Radit - Project created by QtCreator
+# XRadio Leo - based on the Radit open-source radio automation project
 #
 #-------------------------------------------------
 
 QT       += core gui
 
-TARGET = radit
+TARGET = XRadioLeo
 TEMPLATE = app
 QT += sql
 CONFIG += release
