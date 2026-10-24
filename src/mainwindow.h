@@ -5,6 +5,7 @@
 #include <QWorkspace>
 #include <QMdiArea>
 #include <QLabel>
+class QAction;
 
 #include "Player.h"
 #include "Eventos.h"
@@ -40,6 +41,8 @@ class MainWindow : public QMainWindow
         Dock *DockAux1;
         Dock *DockAux2;
         Dock *DockIndicadores;
+        QAction *themeAction;
+        bool darkTheme;
 
     private slots:
         void ShowAux1(bool estado);
@@ -49,6 +52,7 @@ class MainWindow : public QMainWindow
         void ShowGeneral();
         void ShowAcercaDe();
         void UpdateHora();   //Procesa la hora
+        void ToggleTheme();
 
     protected:
 
