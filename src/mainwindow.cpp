@@ -12,8 +12,6 @@
 #include "Cunas.h"
 #include "General.h"
 #include <QAction>
-#include <QApplication>
-#include <QPalette>
 #include "AcercaDe.h"
 
 
@@ -22,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    darkTheme = false;
+    themeAction = 0;
 
     setDockOptions(QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks);
 
@@ -94,6 +94,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     ui->toolBar->addWidget(w_ToolBar);
+    themeAction = ui->toolBar->addAction(QString::fromUtf8("Cambiar tema"));
+    connect(themeAction, SIGNAL(triggered()), this, SLOT(ToggleTheme()));
     themeAction = ui->toolBar->addAction(QString::fromUtf8("Tema: Oscuro"));
     connect(themeAction, SIGNAL(triggered()), this, SLOT(ToggleTheme()));
     ui->toolBarCunas->addWidget(w_Cunas);
