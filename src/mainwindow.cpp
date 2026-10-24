@@ -11,6 +11,9 @@
 #include "ToolBar.h"
 #include "Cunas.h"
 #include "General.h"
+#include <QAction>
+#include <QApplication>
+#include <QPalette>
 #include "AcercaDe.h"
 
 
@@ -44,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     DockPlayer->setWindowTitle("  Reproductor Principal");
     DockEvento->setWindowTitle("  Eventos y Hth");
-    DockIndicadores->setWindowTitle("  Indicadores y Log emisión");
+    DockIndicadores->setWindowTitle("  Indicadores y Log emisiÃ³n");
     DockAux1->setWindowTitle("  Auxiliar 1");
     DockAux2->setWindowTitle("  Auxiliar 2");
 
@@ -91,6 +94,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     ui->toolBar->addWidget(w_ToolBar);
+    themeAction = ui->toolBar->addAction(QString::fromUtf8("Tema: Oscuro"));
+    connect(themeAction, SIGNAL(triggered()), this, SLOT(ToggleTheme()));
     ui->toolBarCunas->addWidget(w_Cunas);
 
     this->addDockWidget(Qt::LeftDockWidgetArea, DockPlayer,Qt::Horizontal);
@@ -117,7 +122,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //botones auxiliares log******************************
     connect(w_ToolBar->BtnAux1, SIGNAL(clicked(bool)), this, SLOT(ShowAux1(bool))); // Axiliar 1
     connect(w_ToolBar->BtnAux2, SIGNAL(clicked(bool)), this, SLOT(ShowAux2(bool))); // Auxiliar2
-    connect(w_ToolBar->BtnCunas, SIGNAL(clicked(bool)), this, SLOT(ShowCunas(bool))); // Paleta de cuñas
+    connect(w_ToolBar->BtnCunas, SIGNAL(clicked(bool)), this, SLOT(ShowCunas(bool))); // Paleta de cuÃ±as
     connect(w_ToolBar->BtnLogEmision, SIGNAL(clicked(bool)), this, SLOT(ShowLog(bool))); // Log emision
 
 
@@ -148,6 +153,7 @@ MainWindow::MainWindow(QWidget *parent) :
     DockAux1->hide();//hide of default
     DockAux2->hide();//hide of default
     DockIndicadores->hide();
+    ToggleTheme();
     showMaximized();
 
 
